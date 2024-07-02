@@ -1,0 +1,244 @@
+{
+  "GenerateCrossPlatformAttributes": false,
+  "GenerateSelectorsForInnerElements": true,
+  "Connections": [
+    {
+      "Name": "AndroidDevice",
+      "Description": null,
+      "Url": "https://oauth-dhrubbgupta-60141:496c488d-49eb-4f15-be25-b1ca9b4b55e1@ondemand.eu-central-1.saucelabs.com:443/wd/hub",
+      "PlatformName": "Android",
+      "PlatformVersion": "9.0",
+      "DeviceName": "Android GoogleAPI Emulator",
+      "SingleInstance": null,
+      "WaitForPageUpdate": true,
+      "Capabilities": {},
+      "GeoLocation": {
+        "Latitude": 44.0,
+        "Longitude": 24.0,
+        "Altitude": 0.0
+      },
+      "LoggingModel": {
+        "LoggingEnabled": true,
+        "VideoRecordingEnabled": false,
+        "RecordingTimeLimit": 600,
+        "VideoQuality": 1,
+        "CollectScreenshot": 0,
+        "CollectPageSource": 0
+      },
+      "HttpHeaders": {},
+      "CvServer": null,
+      "CvApiKey": null,
+      "CvUseLocalServer": false
+    },
+    {
+      "Name": "IOS Device",
+      "Description": null,
+      "Url": "https://oauth-dhrubbgupta-60141:496c488d-49eb-4f15-be25-b1ca9b4b55e1@ondemand.eu-central-1.saucelabs.com:443/wd/hub",
+      "PlatformName": "iOS",
+      "PlatformVersion": "14.5",
+      "DeviceName": "iPhone Simulator",
+      "SingleInstance": null,
+      "WaitForPageUpdate": true,
+      "Capabilities": {},
+      "GeoLocation": {
+        "Latitude": 44.0,
+        "Longitude": 24.0,
+        "Altitude": 0.0
+      },
+      "LoggingModel": {
+        "LoggingEnabled": false,
+        "VideoRecordingEnabled": false,
+        "RecordingTimeLimit": 600,
+        "VideoQuality": 1,
+        "CollectScreenshot": 0,
+        "CollectPageSource": 0
+      },
+      "HttpHeaders": {},
+      "CvServer": null,
+      "CvApiKey": null,
+      "CvUseLocalServer": false
+    },
+    {
+      "Name": "LocalEmulatorAndroidDevice",
+      "Description": null,
+      "Url": "http://localhost:4723/wd/hub",
+      "PlatformName": "Android",
+      "PlatformVersion": "11.0",
+      "DeviceName": "Pixel_5_API_30",
+      "SingleInstance": null,
+      "WaitForPageUpdate": true,
+      "Capabilities": {},
+      "GeoLocation": null,
+      "LoggingModel": {
+        "LoggingEnabled": true,
+        "VideoRecordingEnabled": false,
+        "RecordingTimeLimit": 600,
+        "VideoQuality": 1,
+        "CollectScreenshot": 0,
+        "CollectPageSource": 0
+      },
+      "HttpHeaders": {},
+      "CvServer": null,
+      "CvApiKey": null,
+      "CvUseLocalServer": false
+    },
+    {
+      "Name": "Real Device",
+      "Description": null,
+      "Url": "http://localhost:4723/wd/hub",
+      "PlatformName": "Android",
+      "PlatformVersion": "14",
+      "DeviceName": "Pixel 6",
+      "SingleInstance": null,
+      "WaitForPageUpdate": true,
+      "Capabilities": {},
+      "GeoLocation": null,
+      "LoggingModel": {
+        "LoggingEnabled": true,
+        "VideoRecordingEnabled": false,
+        "RecordingTimeLimit": 600,
+        "VideoQuality": 1,
+        "CollectScreenshot": 0,
+        "CollectPageSource": 0
+      },
+      "HttpHeaders": {},
+      "CvServer": null,
+      "CvApiKey": null,
+      "CvUseLocalServer": false
+    },
+    {
+      "Name": "Real Device (prac)",
+      "Description": null,
+      "Url": "http://localhost:4723/wd/hub",
+      "PlatformName": "Android",
+      "PlatformVersion": "14",
+      "DeviceName": "Pixel 6",
+      "SingleInstance": null,
+      "WaitForPageUpdate": true,
+      "Capabilities": {},
+      "GeoLocation": null,
+      "LoggingModel": {
+        "LoggingEnabled": true,
+        "VideoRecordingEnabled": false,
+        "RecordingTimeLimit": 600,
+        "VideoQuality": 1,
+        "CollectScreenshot": 0,
+        "CollectPageSource": 0
+      },
+      "HttpHeaders": {},
+      "CvServer": null,
+      "CvApiKey": null,
+      "CvUseLocalServer": false
+    }
+  ],
+  "Applications": [
+    {
+      "$id": "1",
+      "Name": "Android App",
+      "Description": null,
+      "Type": "App",
+      "Platforms": {
+        "Android": {
+          "Capabilities": {
+            "app": "https://uipathtestappsto.blob.core.windows.net/testapps/TheApp.apk"
+          },
+          "StartPage": null
+        },
+        "iOS": {
+          "Capabilities": {
+            "app": "https://uipathtestappsto.blob.core.windows.net/testapps/TheApp.ipa"
+          },
+          "StartPage": null
+        }
+      }
+    },
+    {
+      "$id": "2",
+      "Name": "Web App",
+      "Description": null,
+      "Type": "Web",
+      "Platforms": {
+        "Android": {
+          "Capabilities": {
+            "browserName": "Chrome"
+          },
+          "StartPage": "https://opensource-demo.orangehrmlive.com/web/index.php/auth/login"
+        }
+      }
+    },
+    {
+      "$id": "3",
+      "Name": "Setting Dialogue",
+      "Description": null,
+      "Type": "App",
+      "Platforms": {
+        "Android": {
+          "Capabilities": {
+            "appActivity": "com.android.settings.Settings",
+            "appPackage": "com.android.settings"
+          },
+          "StartPage": null
+        },
+        "iOS": {
+          "Capabilities": {
+            "bundleId": "com.apple.Preferences"
+          },
+          "StartPage": null
+        }
+      }
+    },
+    {
+      "$id": "4",
+      "Name": "Local Android App",
+      "Description": null,
+      "Type": "App",
+      "Platforms": {
+        "Android": {
+          "Capabilities": {
+            "app": "C:/Users/dgupta/Documents/app/TheApp.apk"
+          },
+          "StartPage": null
+        },
+        "iOS": {
+          "Capabilities": {
+            "app": "https://uipathtestappsto.blob.core.windows.net/testapps/TheApp.ipa"
+          },
+          "StartPage": null
+        }
+      }
+    },
+    {
+      "$id": "5",
+      "Name": "local Android app (real)",
+      "Description": null,
+      "Type": "App",
+      "Platforms": {
+        "Android": {
+          "Capabilities": {
+            "app": "C:\\Users\\dgupta\\Documents\\app\\TheApp.apk"
+          },
+          "StartPage": null
+        }
+      }
+    },
+    {
+      "$id": "6",
+      "Name": "local android app (real) swaglabs ",
+      "Description": null,
+      "Type": "App",
+      "Platforms": {
+        "Android": {
+          "Capabilities": {
+            "app": "C:/Users/dgupta/Documents/app/Android.SauceLabs.Mobile.Sample.app.2.7.1.apk"
+          },
+          "StartPage": null
+        }
+      }
+    }
+  ],
+  "NormalizeSliderValue": false,
+  "IdsMaxAllowedLength": 40,
+  "LogsPath": "%TEMP%\\UiPath Mobile Automation Logs",
+  "Variables": {},
+  "HttpHeaders": {}
+}
